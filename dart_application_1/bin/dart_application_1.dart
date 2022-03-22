@@ -11,4 +11,11 @@ void main(List<String> arguments) {
     mmap.addAll({xxx[ii]: yyy[ii]});
   }
   print(mmap);
+
+  List llist = [];
+  for (var ii in mmap.entries) {
+    llist.add(ii.value);
+  }
+
+  print(llist);
 }
